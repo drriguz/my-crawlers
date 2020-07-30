@@ -21,44 +21,56 @@ class LineTemplate
 end
 
 class Template
-    def initialize(lines)
+    def initialize(lines, hasError)
         @lines = lines
+        @hasError = hasError
     end
 
     def to_json(*a)
-        {
-            'lines' => @lines
-        }.to_json(*a)
+        if @hasError
+            {
+                'errorLines' => @lines
+            }.to_json(*a)
+        else
+            {
+                'lines' => @lines
+            }.to_json(*a)
+        end
     end
 
     def self.parse(doc)
         lines = []
         p = doc.at_css('div#gl')
-        
-        mode = 0
-        example = ''
-        pattern = ''
-        p.children.each do |x|
-            if (x.is_a? Nokogiri::XML::Element) && x.name == 'br'
-                mode = 1
-                next
-            end
-            if mode == 0
-                if x.is_a? Nokogiri::XML::Text 
+
+        i = 0
+        hasError = false
+        while i < p.children.length do
+            example = ''
+            pattern = ''
+            while i <  p.children.length do
+                x = p.children[i]
+                i += 1
+                # puts "#{i} #{x}"
+                if x.name == 'div'
+                    example = example.strip
+                    pattern = parse_pattern(x).strip
+                    
+                    if pattern.length != example.length
+                        hasError = true
+                        puts "#{pattern.length} #{example.length}"
+                        puts "Possibly not parsed properly [#{pattern}] [#{example}]"
+                    end
+                    lines << LineTemplate.new(pattern, example)
+                    break
+                elsif x.is_a? Nokogiri::XML::Text 
                     example += x.content
-                elsif x.name == 'mark'
+                elsif x.name == 'mark' || x.name == 'b'
                     example += x.text
                 end
-            elsif (mode == 1) && (x.is_a? Nokogiri::XML::Element) && x.name == 'div'
-                pattern = parse_pattern(x)
-                lines << LineTemplate.new(pattern, example)
-                pattern = ''
-                example = ''
-                mode = 0
-            end
+            end    
         end
 
-        return new(lines)
+        return new(lines, hasError)
     end
 
     def self.parse_pattern(element)
@@ -70,7 +82,7 @@ class Template
                     p += s
                 end
             elsif (x.is_a? Nokogiri::XML::Element) && x.name == 'em'
-                p += get_symble(x.text.strip!, x.classes)
+                p += get_symble(x.text.strip, x.classes)
             end
         end
         return p
@@ -108,8 +120,8 @@ class TuneForm
     end
 
     def self.parse(author, doc)
-        abstract = doc.at_css('div#cipuBox h1 span.intro').text.strip!
-        description = doc.at_css('div#cipuBox div#description').text.strip!
+        abstract = doc.at_css('div#cipuBox h1 span.intro').text.strip
+        description = doc.at_css('div#cipuBox div#description').text.strip
 
         template = Template.parse(doc)
         new(author, abstract, nil, description, template, nil)
@@ -138,20 +150,20 @@ class PoemTune
 
     def self.fetch_page(link)
         url = @@rootlink + link 
-        puts("fetching #{url}...")
+        # puts("fetching #{url}...")
         Nokogiri::HTML(HTTP.get(url).to_s)
     end
 
     def self.fetch(name, link)
         doc = fetch_page(link)
 
-        description = doc.at_css('div#cipaiBox').children[2].text.strip!
-        current_author = doc.at_css('div#ti').css('a.curr').first.text.strip!
+        description = doc.at_css('div#cipaiBox').children[2].text.strip
+        current_author = doc.at_css('div#ti').css('a.curr').first.text.strip
         forms = [TuneForm.parse(current_author, doc)]
         
         # other forms
         doc.at_css('div#ti').css('a:not(.curr)').each do |a| 
-            forms << TuneForm.parse(a.text.strip!, fetch_page('pu.php' + a['href']))
+            forms << TuneForm.parse(a.text.strip, fetch_page('pu.php' + a['href']))
         end
         new(name, description, forms)
     end
@@ -183,7 +195,11 @@ class Crawler
         errors = []
         
         all_links.each do |li|
-            @queue << li
+            # for debug
+            # Finished! total:811 error:["pu.php?v=2&name=八节长欢", "pu.php?v=2&name=冉冉云", "pu.php?v=2&name=四犯剪梅花", "pu.php?v=2&name=清平调辞", "pu.php?v=2&name=西河", "pu.php?v=2&name=荔枝香", "pu.php?v=2&name=钗头凤", "pu.php?v=2&name=长相思", "pu.php?v=2&name=鬭百草"]
+            # if li.text == '冉冉云'
+                @queue << li
+            # end
         end
 
         threads = []
@@ -206,7 +222,8 @@ class Crawler
                 rescue ThreadError
                     puts("Thread #{id} exit")
                     break
-                rescue Exception
+                rescue Exception => e
+                    puts e
                     @mutex.lock
                     @errors <<href
                     @mutex.unlock
