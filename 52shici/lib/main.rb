@@ -17,7 +17,6 @@ class LineTemplate
             'pattern' => @pattern
         }.to_json(*a)
     end
-
 end
 
 class Template
@@ -42,6 +41,52 @@ class Template
         lines = []
         p = doc.at_css('div#gl')
 
+        fix_rules = {
+            "[○○○●●○◎●◎○、⊙●○□。] [波涛何处试蛟鰐，到白头、犹守溪山。]" => {
+                "pattern" => "○○○●●○◎，●◎○、⊙●○□。",
+                "example" => "波涛何处试蛟鰐，到白头、犹守溪山。",
+            },
+            "[●●○○●○■。●○○、●○○■。] [双调五十九字，前段四句三仄韵，后段四句四仄韵——韩淲\r\n\r\n倚遍阑干弄花雨。卷朱帘、草迷芳树。]" => {
+                "pattern" => "●●○○●○■。●○○、●○○■。",
+                "example" => "倚遍阑干弄花雨。卷朱帘、草迷芳树。",
+            },
+            "[●●○○，●○○、●●●○○■。叠雪罗轻，称云章题扇。] [水殿风凉，赐环归、正是梦熊华旦。]" => {
+                "pattern" => "●●○○，●○○、●●●○○■。",
+                "example" => "水殿风凉，赐环归、正是梦熊华旦。",
+            },
+            "[●●○○，●○○○■。] []" => {
+                "pattern" => "●●○○，●○○○■。",
+                "example" => "叠雪罗轻，称云章题扇。",
+            },
+            "[●●○○，●●●、○○■] [后约难知，又却似、阳关宴。]" => {
+                "pattern" => "●●○○，●●●、○○■。",
+                "example" => "后约难知，又却似、阳关宴。",
+            },
+            "[⊙○◎●●○○，◎○◎■。] [山 围故国绕清江，髻鬟对起。]" => {
+                "pattern" => "⊙○◎●●○○，◎○◎■。",
+                "example" => "山围故国绕清江，髻鬟对起。",
+            },
+            "[○◎■。⊙○■。●◎○⊙，●○○■。■。■。■。] [长记忆。探芳日。笑凭郎肩，殢红偎碧。惜。惜。惜。(叠)]" => {
+                "pattern" => "○◎■。⊙○■。●◎○⊙，●○○■。■。■。■。(叠)",
+                "example" => "长记忆。探芳日。笑凭郎肩，殢红偎碧。惜。惜。惜。(叠)",
+            },
+            "[○○■。●○■。○◎○⊙，●○○■。■。■。■。] [凭青翼。问消息。花谢春归，几时来得。忆。忆。忆。(叠)]" => {
+                "pattern" => "○○■。●○■。○◎○⊙，●○○■。■。■。■。(叠)",
+                "example" => "凭青翼。问消息。花谢春归，几时来得。忆。忆。忆。(叠)",
+            },
+            "[●○□。●○□。●○○●，●●○□。□。□。□。] [晓风乾。泪痕残。欲笺心事，独语斜阑。难。难。难。(叠)]" => {
+                "pattern" => "●○□。●○□。●○○●，●●○□。□。□。□。(叠)",
+                "example" => "晓风乾。泪痕残。欲笺心事，独语斜阑。难。难。难。(叠)",
+            },
+            "[●○□。●○□。●○○●，●●○□。□。□。□。] [角声寒。夜阑珊。怕人寻问，咽泪妆欢。瞒。瞒。瞒。(叠)]" => {
+                "pattern" => "●○□。●○□。●○○●，●●○□。□。□。□。(叠)",
+                "example" => "角声寒。夜阑珊。怕人寻问，咽泪妆欢。瞒。瞒。瞒。(叠)",
+            },
+            "[●○○、●●●○○，○○○●] [正当年、似阆苑琼枝，朝朝相倚。]" => {
+                "pattern" => "●○○、●●●○○，○○○●。",
+                "example" => "正当年、似阆苑琼枝，朝朝相倚。",
+            },
+        }
         i = 0
         hasError = false
         while i < p.children.length do
@@ -58,13 +103,22 @@ class Template
                     if pattern.length != example.length
                         hasError = true
                         puts "#{pattern.length} #{example.length}"
-                        puts "Possibly not parsed properly [#{pattern}] [#{example}]"
+                        key = "[#{pattern}] [#{example}]"
+                        puts "Possibly not parsed properly #{key}"
+                        if fix_rules.has_key? key
+                            puts "Resolved: #{key}"
+                            example = fix_rules[key]["example"]
+                            pattern = fix_rules[key]["pattern"]
+                            if pattern.length == example.length
+                                hasError = false
+                            end
+                        end
                     end
                     lines << LineTemplate.new(pattern, example)
                     break
                 elsif x.is_a? Nokogiri::XML::Text 
                     example += x.content
-                elsif x.name == 'mark' || x.name == 'b'
+                elsif x.name == 'mark' || x.name == 'b' || x.name == 'span'
                     example += x.text
                 end
             end    
@@ -83,6 +137,8 @@ class Template
                 end
             elsif (x.is_a? Nokogiri::XML::Element) && x.name == 'em'
                 p += get_symble(x.text.strip, x.classes)
+            elsif x.name == 'span'
+                p += x.text
             end
         end
         return p
@@ -110,21 +166,20 @@ end
 
 # 谱体
 class TuneForm
-    def initialize(author, abstract, tips, description, template, examples)
+    def initialize(author, abstract, tips, description, template)
         @author = author
         @abstract = abstract
         @tips = tips
         @description = description
         @template = template
-        @examples = examples
     end
 
     def self.parse(author, doc)
         abstract = doc.at_css('div#cipuBox h1 span.intro').text.strip
         description = doc.at_css('div#cipuBox div#description').text.strip
-
+        tips = doc.at_css('div#cipuBox blockquote.tips')&.text&.strip
         template = Template.parse(doc)
-        new(author, abstract, nil, description, template, nil)
+        new(author, abstract, tips, description, template)
     end
 
     def to_json(*a)
@@ -133,8 +188,7 @@ class TuneForm
             'abstract' => @abstract,
             'tips' => @tips,
             'description' => @description,
-            'template' => @template,
-            'examples' => @examples
+            'template' => @template
         }.to_json(*a)
     end
 end
