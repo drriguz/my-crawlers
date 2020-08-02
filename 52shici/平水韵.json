@@ -1,7 +1,9 @@
 [
   {
-    "name": "上平一东",
-    "type": "上平",
+    "group": "平声一东",
+    "name": "平声一东",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "风"
@@ -1392,8 +1394,10 @@
     ]
   },
   {
-    "name": "上平二冬",
-    "type": "上平",
+    "group": "平声二冬",
+    "name": "平声二冬",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "峰"
@@ -2373,8 +2377,10 @@
     ]
   },
   {
-    "name": "上平三江",
-    "type": "上平",
+    "group": "平声三江",
+    "name": "平声三江",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "江"
@@ -2739,8 +2745,10 @@
     ]
   },
   {
-    "name": "上平四支",
-    "type": "上平",
+    "group": "平声四支",
+    "name": "平声四支",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "时"
@@ -6250,8 +6258,10 @@
     ]
   },
   {
-    "name": "上平五微",
-    "type": "上平",
+    "group": "平声五微",
+    "name": "平声五微",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "归"
@@ -6799,8 +6809,10 @@
     ]
   },
   {
-    "name": "上平六鱼",
-    "type": "上平",
+    "group": "平声六鱼",
+    "name": "平声六鱼",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "书"
@@ -7583,8 +7595,10 @@
     ]
   },
   {
-    "name": "上平七虞",
-    "type": "上平",
+    "group": "平声七虞",
+    "name": "平声七虞",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "无"
@@ -9689,8 +9703,10 @@
     ]
   },
   {
-    "name": "上平八齐",
-    "type": "上平",
+    "group": "平声八齐",
+    "name": "平声八齐",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "西"
@@ -10713,8 +10729,10 @@
     ]
   },
   {
-    "name": "上平九佳",
-    "type": "上平",
+    "group": "平声九佳",
+    "name": "平声九佳",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "怀"
@@ -11224,8 +11242,10 @@
     ]
   },
   {
-    "name": "上平十灰",
-    "type": "上平",
+    "group": "平声十灰",
+    "name": "平声十灰",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "来"
@@ -12412,8 +12432,10 @@
     ]
   },
   {
-    "name": "上平十一真",
-    "type": "上平",
+    "group": "平声十一真",
+    "name": "平声十一真",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "人"
@@ -13853,8 +13875,10 @@
     ]
   },
   {
-    "name": "上平十二文",
-    "type": "上平",
+    "group": "平声十二文",
+    "name": "平声十二文",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "云"
@@ -14495,8 +14519,10 @@
     ]
   },
   {
-    "name": "上平十三元",
-    "type": "上平",
+    "group": "平声十三元",
+    "name": "平声十三元",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "言"
@@ -15935,8 +15961,10 @@
     ]
   },
   {
-    "name": "上平十四寒",
-    "type": "上平",
+    "group": "平声十四寒",
+    "name": "平声十四寒",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "寒"
@@ -16967,8 +16995,10 @@
     ]
   },
   {
-    "name": "上平十五删",
-    "type": "上平",
+    "group": "平声十五删",
+    "name": "平声十五删",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "山"
@@ -17403,8 +17433,10 @@
     ]
   },
   {
-    "name": "下平一先",
-    "type": "下平",
+    "group": "平声一先",
+    "name": "平声一先",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "年"
@@ -19292,8 +19324,10 @@
     ]
   },
   {
-    "name": "下平二萧",
-    "type": "下平",
+    "group": "平声二萧",
+    "name": "平声二萧",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "朝"
@@ -20657,8 +20691,10 @@
     ]
   },
   {
-    "name": "下平三肴",
-    "type": "下平",
+    "group": "平声三肴",
+    "name": "平声三肴",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "交"
@@ -21327,8 +21363,10 @@
     ]
   },
   {
-    "name": "下平四豪",
-    "type": "下平",
+    "group": "平声四豪",
+    "name": "平声四豪",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "高"
@@ -22100,8 +22138,10 @@
     ]
   },
   {
-    "name": "下平五歌",
-    "type": "下平",
+    "group": "平声五歌",
+    "name": "平声五歌",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "多"
@@ -23093,8 +23133,10 @@
     ]
   },
   {
-    "name": "下平六麻",
-    "type": "下平",
+    "group": "平声六麻",
+    "name": "平声六麻",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "花"
@@ -24242,8 +24284,10 @@
     ]
   },
   {
-    "name": "下平七阳",
-    "type": "下平",
+    "group": "平声七阳",
+    "name": "平声七阳",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "香"
@@ -26283,8 +26327,10 @@
     ]
   },
   {
-    "name": "下平八庚",
-    "type": "下平",
+    "group": "平声八庚",
+    "name": "平声八庚",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "生"
@@ -27939,8 +27985,10 @@
     ]
   },
   {
-    "name": "下平九青",
-    "type": "下平",
+    "group": "平声九青",
+    "name": "平声九青",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "青"
@@ -28740,8 +28788,10 @@
     ]
   },
   {
-    "name": "下平十蒸",
-    "type": "下平",
+    "group": "平声十蒸",
+    "name": "平声十蒸",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "灯"
@@ -29494,8 +29544,10 @@
     ]
   },
   {
-    "name": "下平十一尤",
-    "type": "下平",
+    "group": "平声十一尤",
+    "name": "平声十一尤",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "秋"
@@ -31681,8 +31733,10 @@
     ]
   },
   {
-    "name": "下平十二侵",
-    "type": "下平",
+    "group": "平声十二侵",
+    "name": "平声十二侵",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "心"
@@ -32412,8 +32466,10 @@
     ]
   },
   {
-    "name": "下平十三覃",
-    "type": "下平",
+    "group": "平声十三覃",
+    "name": "平声十三覃",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "南"
@@ -33179,8 +33235,10 @@
     ]
   },
   {
-    "name": "下平十四盐",
-    "type": "下平",
+    "group": "平声十四盐",
+    "name": "平声十四盐",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "帘"
@@ -33903,8 +33961,10 @@
     ]
   },
   {
-    "name": "下平十五咸",
-    "type": "下平",
+    "group": "平声十五咸",
+    "name": "平声十五咸",
+    "tone": "平声",
+    "is_general": true,
     "chars": [
       {
         "char": "岩"
@@ -34306,8 +34366,10 @@
     ]
   },
   {
+    "group": "上声一董",
     "name": "上声一董",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "孔"
@@ -34683,8 +34745,10 @@
     ]
   },
   {
+    "group": "上声二肿",
     "name": "上声二肿",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "宠"
@@ -35056,8 +35120,10 @@
     ]
   },
   {
+    "group": "上声三讲",
     "name": "上声三讲",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "讲"
@@ -35154,8 +35220,10 @@
     ]
   },
   {
+    "group": "上声四纸",
     "name": "上声四纸",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "水"
@@ -37023,8 +37091,10 @@
     ]
   },
   {
+    "group": "上声五尾",
     "name": "上声五尾",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "尾"
@@ -37269,8 +37339,10 @@
     ]
   },
   {
+    "group": "上声六语",
     "name": "上声六语",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "许"
@@ -37836,8 +37908,10 @@
     ]
   },
   {
+    "group": "上声七麌",
     "name": "上声七麌",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "古"
@@ -38850,8 +38924,10 @@
     ]
   },
   {
+    "group": "上声八荠",
     "name": "上声八荠",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "底"
@@ -39234,8 +39310,10 @@
     ]
   },
   {
+    "group": "上声九蟹",
     "name": "上声九蟹",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "买"
@@ -39436,8 +39514,10 @@
     ]
   },
   {
+    "group": "上声十贿",
     "name": "上声十贿",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "海"
@@ -40058,8 +40138,10 @@
     ]
   },
   {
+    "group": "上声十一轸",
     "name": "上声十一轸",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "尽"
@@ -40627,8 +40709,10 @@
     ]
   },
   {
+    "group": "上声十二吻",
     "name": "上声十二吻",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "粉"
@@ -40858,8 +40942,10 @@
     ]
   },
   {
+    "group": "上声十三阮",
     "name": "上声十三阮",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "晚"
@@ -41620,8 +41706,10 @@
     ]
   },
   {
+    "group": "上声十四旱",
     "name": "上声十四旱",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "满"
@@ -42092,8 +42180,10 @@
     ]
   },
   {
+    "group": "上声十五潸",
     "name": "上声十五潸",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "眼"
@@ -42351,8 +42441,10 @@
     ]
   },
   {
+    "group": "上声十六铣",
     "name": "上声十六铣",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "浅"
@@ -43507,8 +43599,10 @@
     ]
   },
   {
+    "group": "上声十七筱",
     "name": "上声十七筱",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "鸟"
@@ -44214,8 +44308,10 @@
     ]
   },
   {
+    "group": "上声十八巧",
     "name": "上声十八巧",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "饱"
@@ -44435,8 +44531,10 @@
     ]
   },
   {
+    "group": "上声十九皓",
     "name": "上声十九皓",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "老"
@@ -45025,8 +45123,10 @@
     ]
   },
   {
+    "group": "上声二十哿",
     "name": "上声二十哿",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "我"
@@ -45699,8 +45799,10 @@
     ]
   },
   {
+    "group": "上声二十一马",
     "name": "上声二十一马",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "者"
@@ -46112,8 +46214,10 @@
     ]
   },
   {
+    "group": "上声二十二养",
     "name": "上声二十二养",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "赏"
@@ -47052,8 +47156,10 @@
     ]
   },
   {
+    "group": "上声二十三梗",
     "name": "上声二十三梗",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "影"
@@ -47662,8 +47768,10 @@
     ]
   },
   {
+    "group": "上声二十四迥",
     "name": "上声二十四迥",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "顶"
@@ -47989,8 +48097,10 @@
     ]
   },
   {
+    "group": "上声二十五有",
     "name": "上声二十五有",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "酒"
@@ -48952,8 +49062,10 @@
     ]
   },
   {
+    "group": "上声二十六寝",
     "name": "上声二十六寝",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "锦"
@@ -49269,8 +49381,10 @@
     ]
   },
   {
+    "group": "上声二十七感",
     "name": "上声二十七感",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "感"
@@ -49826,8 +49940,10 @@
     ]
   },
   {
+    "group": "上声二十八俭",
     "name": "上声二十八俭",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "险"
@@ -50275,8 +50391,10 @@
     ]
   },
   {
+    "group": "上声二十九豏",
     "name": "上声二十九豏",
-    "type": "上声",
+    "tone": "上声",
+    "is_general": true,
     "chars": [
       {
         "char": "减"
@@ -50471,8 +50589,10 @@
     ]
   },
   {
+    "group": "去声一送",
     "name": "去声一送",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "梦"
@@ -50882,8 +51002,10 @@
     ]
   },
   {
+    "group": "去声二宋",
     "name": "去声二宋",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "用"
@@ -51059,8 +51181,10 @@
     ]
   },
   {
+    "group": "去声三绛",
     "name": "去声三绛",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "巷"
@@ -51158,8 +51282,10 @@
     ]
   },
   {
+    "group": "去声四寘",
     "name": "去声四寘",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "事"
@@ -53098,8 +53224,10 @@
     ]
   },
   {
+    "group": "去声五未",
     "name": "去声五未",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "气"
@@ -53518,8 +53646,10 @@
     ]
   },
   {
+    "group": "去声六御",
     "name": "去声六御",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "絮"
@@ -53884,8 +54014,10 @@
     ]
   },
   {
+    "group": "去声七遇",
     "name": "去声七遇",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "路"
@@ -54930,8 +55062,10 @@
     ]
   },
   {
+    "group": "去声八霁",
     "name": "去声八霁",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "世"
@@ -56496,8 +56630,10 @@
     ]
   },
   {
+    "group": "去声九泰",
     "name": "去声九泰",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "外"
@@ -57098,8 +57234,10 @@
     ]
   },
   {
+    "group": "去声十卦",
     "name": "去声十卦",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "界"
@@ -57703,8 +57841,10 @@
     ]
   },
   {
+    "group": "去声十一队",
     "name": "去声十一队",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "爱"
@@ -58647,8 +58787,10 @@
     ]
   },
   {
+    "group": "去声十二震",
     "name": "去声十二震",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "润"
@@ -59354,8 +59496,10 @@
     ]
   },
   {
+    "group": "去声十三问",
     "name": "去声十三问",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "问"
@@ -59638,8 +59782,10 @@
     ]
   },
   {
+    "group": "去声十四愿",
     "name": "去声十四愿",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "健"
@@ -60220,8 +60366,10 @@
     ]
   },
   {
+    "group": "去声十五翰",
     "name": "去声十五翰",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "乱"
@@ -61053,8 +61201,10 @@
     ]
   },
   {
+    "group": "去声十六谏",
     "name": "去声十六谏",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "雁"
@@ -61399,8 +61549,10 @@
     ]
   },
   {
+    "group": "去声十七霰",
     "name": "去声十七霰",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "见"
@@ -62461,8 +62613,10 @@
     ]
   },
   {
+    "group": "去声十八啸",
     "name": "去声十八啸",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "笑"
@@ -63089,8 +63243,10 @@
     ]
   },
   {
+    "group": "去声十九效",
     "name": "去声十九效",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "貌"
@@ -63366,8 +63522,10 @@
     ]
   },
   {
+    "group": "去声二十号",
     "name": "去声二十号",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "到"
@@ -63834,8 +63992,10 @@
     ]
   },
   {
+    "group": "去声二十一个",
     "name": "去声二十一个",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "过",
@@ -64174,8 +64334,10 @@
     ]
   },
   {
+    "group": "去声二十二祃",
     "name": "去声二十二祃",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "夜"
@@ -64747,8 +64909,10 @@
     ]
   },
   {
+    "group": "去声二十三漾",
     "name": "去声二十三漾",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "望"
@@ -65494,8 +65658,10 @@
     ]
   },
   {
+    "group": "去声二十四敬",
     "name": "去声二十四敬",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "病"
@@ -65897,8 +66063,10 @@
     ]
   },
   {
+    "group": "去声二十五径",
     "name": "去声二十五径",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "定"
@@ -66336,8 +66504,10 @@
     ]
   },
   {
+    "group": "去声二十六宥",
     "name": "去声二十六宥",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "旧"
@@ -67405,8 +67575,10 @@
     ]
   },
   {
+    "group": "去声二十七沁",
     "name": "去声二十七沁",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "禁"
@@ -67650,8 +67822,10 @@
     ]
   },
   {
+    "group": "去声二十八勘",
     "name": "去声二十八勘",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "憾"
@@ -67924,8 +68098,10 @@
     ]
   },
   {
+    "group": "去声二十九艳",
     "name": "去声二十九艳",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "念"
@@ -68320,8 +68496,10 @@
     ]
   },
   {
+    "group": "去声三十陷",
     "name": "去声三十陷",
-    "type": "去声",
+    "tone": "去声",
+    "is_general": true,
     "chars": [
       {
         "char": "鉴"
@@ -68519,8 +68697,10 @@
     ]
   },
   {
+    "group": "入声一屋",
     "name": "入声一屋",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "竹"
@@ -70218,8 +70398,10 @@
     ]
   },
   {
+    "group": "入声二沃",
     "name": "入声二沃",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "绿"
@@ -70801,8 +70983,10 @@
     ]
   },
   {
+    "group": "入声三觉",
     "name": "入声三觉",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "学"
@@ -71482,8 +71666,10 @@
     ]
   },
   {
+    "group": "入声四质",
     "name": "入声四质",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "日"
@@ -72695,8 +72881,10 @@
     ]
   },
   {
+    "group": "入声五物",
     "name": "入声五物",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "物"
@@ -73046,8 +73234,10 @@
     ]
   },
   {
+    "group": "入声六月",
     "name": "入声六月",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "月"
@@ -73947,8 +74137,10 @@
     ]
   },
   {
+    "group": "入声七曷",
     "name": "入声七曷",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "阔"
@@ -74878,8 +75070,10 @@
     ]
   },
   {
+    "group": "入声八黠",
     "name": "入声八黠",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "札"
@@ -75390,8 +75584,10 @@
     ]
   },
   {
+    "group": "入声九屑",
     "name": "入声九屑",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "雪"
@@ -76959,8 +77155,10 @@
     ]
   },
   {
+    "group": "入声十药",
     "name": "入声十药",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "落"
@@ -78456,8 +78654,10 @@
     ]
   },
   {
+    "group": "入声十一陌",
     "name": "入声十一陌",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "客"
@@ -80006,8 +80206,10 @@
     ]
   },
   {
+    "group": "入声十二锡",
     "name": "入声十二锡",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "壁"
@@ -80807,8 +81009,10 @@
     ]
   },
   {
+    "group": "入声十三职",
     "name": "入声十三职",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "色"
@@ -81792,8 +81996,10 @@
     ]
   },
   {
+    "group": "入声十四缉",
     "name": "入声十四缉",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "急"
@@ -82331,8 +82537,10 @@
     ]
   },
   {
+    "group": "入声十五合",
     "name": "入声十五合",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "合"
@@ -83049,8 +83257,10 @@
     ]
   },
   {
+    "group": "入声十六叶",
     "name": "入声十六叶",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "叶"
@@ -83825,8 +84035,10 @@
     ]
   },
   {
+    "group": "入声十七洽",
     "name": "入声十七洽",
-    "type": "入声",
+    "tone": "入声",
+    "is_general": true,
     "chars": [
       {
         "char": "业"

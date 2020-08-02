@@ -105,5 +105,5 @@ if __FILE__ == $0
         i += 1
     end
     
-    File.open('clzy.json', 'w') { |file| file.write(JSON.pretty_generate(sections)) }
+    File.open('词林正韵.json', 'w') { |file| file.write(JSON.pretty_generate(sections)) }
 end

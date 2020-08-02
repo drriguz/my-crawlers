@@ -46,8 +46,10 @@ class Section
 
     def to_json(*a)
         {
+            'group' => @name,
             'name' => @name,
-            'type' => @type,
+            'tone' => @type,
+            'is_general' => true,
             'chars' => @chars
         }.to_json(*a)
     end
@@ -97,13 +99,13 @@ class Section
         order = name[0..(name.length-3)]
         type = name[(name.length-2)..(name.length-2)]
         t = nil
-        if @@sp.include?(order)
-            t = '上平'
-        elsif type == '平'
-            t = '下平'
-        else
+        # if @@sp.include?(order)
+        #     t = '上平'
+        # elsif type == '平'
+        #     t = '下平'
+        # else
             t = type + '声'
-        end
+        # end
         return [t, order]
     end
     
@@ -117,5 +119,5 @@ if __FILE__ == $0
         sections << s
     end
     
-    File.open('psy.json', 'w') { |file| file.write(JSON.pretty_generate(sections)) }
+    File.open('平水韵.json', 'w') { |file| file.write(JSON.pretty_generate(sections)) }
 end
