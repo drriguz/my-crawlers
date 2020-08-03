@@ -99,13 +99,13 @@ class Section
         order = name[0..(name.length-3)]
         type = name[(name.length-2)..(name.length-2)]
         t = nil
-        # if @@sp.include?(order)
-        #     t = '上平'
-        # elsif type == '平'
-        #     t = '下平'
-        # else
+        if @@sp.include?(order)
+            t = '上平'
+        elsif type == '平'
+            t = '下平'
+        else
             t = type + '声'
-        # end
+        end
         return [t, order]
     end
     

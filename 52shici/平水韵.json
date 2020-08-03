@@ -1,8 +1,8 @@
 [
   {
-    "group": "平声一东",
-    "name": "平声一东",
-    "tone": "平声",
+    "group": "上平一东",
+    "name": "上平一东",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -1394,9 +1394,9 @@
     ]
   },
   {
-    "group": "平声二冬",
-    "name": "平声二冬",
-    "tone": "平声",
+    "group": "上平二冬",
+    "name": "上平二冬",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -2377,9 +2377,9 @@
     ]
   },
   {
-    "group": "平声三江",
-    "name": "平声三江",
-    "tone": "平声",
+    "group": "上平三江",
+    "name": "上平三江",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -2745,9 +2745,9 @@
     ]
   },
   {
-    "group": "平声四支",
-    "name": "平声四支",
-    "tone": "平声",
+    "group": "上平四支",
+    "name": "上平四支",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -6258,9 +6258,9 @@
     ]
   },
   {
-    "group": "平声五微",
-    "name": "平声五微",
-    "tone": "平声",
+    "group": "上平五微",
+    "name": "上平五微",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -6809,9 +6809,9 @@
     ]
   },
   {
-    "group": "平声六鱼",
-    "name": "平声六鱼",
-    "tone": "平声",
+    "group": "上平六鱼",
+    "name": "上平六鱼",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -7595,9 +7595,9 @@
     ]
   },
   {
-    "group": "平声七虞",
-    "name": "平声七虞",
-    "tone": "平声",
+    "group": "上平七虞",
+    "name": "上平七虞",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -9703,9 +9703,9 @@
     ]
   },
   {
-    "group": "平声八齐",
-    "name": "平声八齐",
-    "tone": "平声",
+    "group": "上平八齐",
+    "name": "上平八齐",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -10729,9 +10729,9 @@
     ]
   },
   {
-    "group": "平声九佳",
-    "name": "平声九佳",
-    "tone": "平声",
+    "group": "上平九佳",
+    "name": "上平九佳",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -11242,9 +11242,9 @@
     ]
   },
   {
-    "group": "平声十灰",
-    "name": "平声十灰",
-    "tone": "平声",
+    "group": "上平十灰",
+    "name": "上平十灰",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -12432,9 +12432,9 @@
     ]
   },
   {
-    "group": "平声十一真",
-    "name": "平声十一真",
-    "tone": "平声",
+    "group": "上平十一真",
+    "name": "上平十一真",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -13875,9 +13875,9 @@
     ]
   },
   {
-    "group": "平声十二文",
-    "name": "平声十二文",
-    "tone": "平声",
+    "group": "上平十二文",
+    "name": "上平十二文",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -14519,9 +14519,9 @@
     ]
   },
   {
-    "group": "平声十三元",
-    "name": "平声十三元",
-    "tone": "平声",
+    "group": "上平十三元",
+    "name": "上平十三元",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -15961,9 +15961,9 @@
     ]
   },
   {
-    "group": "平声十四寒",
-    "name": "平声十四寒",
-    "tone": "平声",
+    "group": "上平十四寒",
+    "name": "上平十四寒",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -16995,9 +16995,9 @@
     ]
   },
   {
-    "group": "平声十五删",
-    "name": "平声十五删",
-    "tone": "平声",
+    "group": "上平十五删",
+    "name": "上平十五删",
+    "tone": "上平",
     "is_general": true,
     "chars": [
       {
@@ -17433,9 +17433,9 @@
     ]
   },
   {
-    "group": "平声一先",
-    "name": "平声一先",
-    "tone": "平声",
+    "group": "下平一先",
+    "name": "下平一先",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -19324,9 +19324,9 @@
     ]
   },
   {
-    "group": "平声二萧",
-    "name": "平声二萧",
-    "tone": "平声",
+    "group": "下平二萧",
+    "name": "下平二萧",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -20691,9 +20691,9 @@
     ]
   },
   {
-    "group": "平声三肴",
-    "name": "平声三肴",
-    "tone": "平声",
+    "group": "下平三肴",
+    "name": "下平三肴",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -21363,9 +21363,9 @@
     ]
   },
   {
-    "group": "平声四豪",
-    "name": "平声四豪",
-    "tone": "平声",
+    "group": "下平四豪",
+    "name": "下平四豪",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -22138,9 +22138,9 @@
     ]
   },
   {
-    "group": "平声五歌",
-    "name": "平声五歌",
-    "tone": "平声",
+    "group": "下平五歌",
+    "name": "下平五歌",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -23133,9 +23133,9 @@
     ]
   },
   {
-    "group": "平声六麻",
-    "name": "平声六麻",
-    "tone": "平声",
+    "group": "下平六麻",
+    "name": "下平六麻",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -24284,9 +24284,9 @@
     ]
   },
   {
-    "group": "平声七阳",
-    "name": "平声七阳",
-    "tone": "平声",
+    "group": "下平七阳",
+    "name": "下平七阳",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -26327,9 +26327,9 @@
     ]
   },
   {
-    "group": "平声八庚",
-    "name": "平声八庚",
-    "tone": "平声",
+    "group": "下平八庚",
+    "name": "下平八庚",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -27985,9 +27985,9 @@
     ]
   },
   {
-    "group": "平声九青",
-    "name": "平声九青",
-    "tone": "平声",
+    "group": "下平九青",
+    "name": "下平九青",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -28788,9 +28788,9 @@
     ]
   },
   {
-    "group": "平声十蒸",
-    "name": "平声十蒸",
-    "tone": "平声",
+    "group": "下平十蒸",
+    "name": "下平十蒸",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -29544,9 +29544,9 @@
     ]
   },
   {
-    "group": "平声十一尤",
-    "name": "平声十一尤",
-    "tone": "平声",
+    "group": "下平十一尤",
+    "name": "下平十一尤",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -31733,9 +31733,9 @@
     ]
   },
   {
-    "group": "平声十二侵",
-    "name": "平声十二侵",
-    "tone": "平声",
+    "group": "下平十二侵",
+    "name": "下平十二侵",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -32466,9 +32466,9 @@
     ]
   },
   {
-    "group": "平声十三覃",
-    "name": "平声十三覃",
-    "tone": "平声",
+    "group": "下平十三覃",
+    "name": "下平十三覃",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -33235,9 +33235,9 @@
     ]
   },
   {
-    "group": "平声十四盐",
-    "name": "平声十四盐",
-    "tone": "平声",
+    "group": "下平十四盐",
+    "name": "下平十四盐",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
@@ -33961,9 +33961,9 @@
     ]
   },
   {
-    "group": "平声十五咸",
-    "name": "平声十五咸",
-    "tone": "平声",
+    "group": "下平十五咸",
+    "name": "下平十五咸",
+    "tone": "下平",
     "is_general": true,
     "chars": [
       {
