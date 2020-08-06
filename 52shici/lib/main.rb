@@ -20,24 +20,25 @@ class LineTemplate
 end
 
 class Template
-    def initialize(lines, hasError)
-        @lines = lines
+    def initialize(sections, hasError)
+        @sections = sections
         @hasError = hasError
     end
 
     def to_json(*a)
         if @hasError
             {
-                'errorLines' => @lines
+                'error' => @sections
             }.to_json(*a)
         else
             {
-                'lines' => @lines
+                'sections' => @sections
             }.to_json(*a)
         end
     end
 
     def self.parse(doc)
+        sections = []
         lines = []
         p = doc.at_css('div#gl')
 
@@ -102,11 +103,11 @@ class Template
                     
                     if pattern.length != example.length
                         hasError = true
-                        puts "#{pattern.length} #{example.length}"
+                        # puts "#{pattern.length} #{example.length}"
                         key = "[#{pattern}] [#{example}]"
-                        puts "Possibly not parsed properly #{key}"
+                        # puts "Possibly not parsed properly #{key}"
                         if fix_rules.has_key? key
-                            puts "Resolved: #{key}"
+                            # Resolved: #{key}"
                             example = fix_rules[key]["example"]
                             pattern = fix_rules[key]["pattern"]
                             if pattern.length == example.length
@@ -115,6 +116,11 @@ class Template
                         end
                     end
                     lines << LineTemplate.new(pattern, example)
+                    # <div class="pu"><br/>
+                    if i == p.children.length || p.children[i].name == 'br'
+                        sections << lines
+                        lines = []
+                    end
                     break
                 elsif x.is_a? Nokogiri::XML::Text 
                     example += x.content
@@ -124,7 +130,7 @@ class Template
             end    
         end
 
-        return new(lines, hasError)
+        return new(sections, hasError)
     end
 
     def self.parse_pattern(element)
@@ -251,9 +257,9 @@ class Crawler
         all_links.each do |li|
             # for debug
             # Finished! total:811 error:["pu.php?v=2&name=八节长欢", "pu.php?v=2&name=冉冉云", "pu.php?v=2&name=四犯剪梅花", "pu.php?v=2&name=清平调辞", "pu.php?v=2&name=西河", "pu.php?v=2&name=荔枝香", "pu.php?v=2&name=钗头凤", "pu.php?v=2&name=长相思", "pu.php?v=2&name=鬭百草"]
-            # if li.text == '冉冉云'
+            #if li.text == '暗香'
                 @queue << li
-            # end
+            #end
         end
 
         threads = []
@@ -294,5 +300,5 @@ end
 if __FILE__ == $0
     crawler = Crawler.new
     crawler.fetch
-    crawler.save('qdcp.json')
+    crawler.save('钦定词谱.json')
 end
