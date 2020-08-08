@@ -47,7 +47,7 @@ class Template
                 "pattern" => "○○○●●○◎，●◎○、⊙●○□。",
                 "example" => "波涛何处试蛟鰐，到白头、犹守溪山。",
             },
-            "[●●○○●○■。●○○、●○○■。] [双调五十九字，前段四句三仄韵，后段四句四仄韵——韩淲\r\n\r\n倚遍阑干弄花雨。卷朱帘、草迷芳树。]" => {
+            "[●●○○●○■。●○○、●○○■。] [双调五十九字，前段四句三仄韵，后段四句四仄韵——韩淲\r\n倚遍阑干弄花雨。卷朱帘、草迷芳树。]" => {
                 "pattern" => "●●○○●○■。●○○、●○○■。",
                 "example" => "倚遍阑干弄花雨。卷朱帘、草迷芳树。",
             },
@@ -90,14 +90,18 @@ class Template
         }
         i = 0
         hasError = false
+        p.children.each do |e|
+            if e.name == 'text' && e.text.strip == ''
+                e.remove
+            end
+        end
         while i < p.children.length do
             example = ''
             pattern = ''
             while i <  p.children.length do
                 x = p.children[i]
                 i += 1
-                # puts "#{i} #{x}"
-                if x.name == 'div'
+                if x.name == 'div' # div.pu
                     example = example.strip
                     pattern = parse_pattern(x).strip
                     
@@ -181,6 +185,7 @@ class TuneForm
     end
 
     def self.parse(author, doc)
+        puts("-----------------------------------#{author}")
         abstract = doc.at_css('div#cipuBox h1 span.intro').text.strip
         description = doc.at_css('div#cipuBox div#description').text.strip
         tips = doc.at_css('div#cipuBox blockquote.tips')&.text&.strip
@@ -257,7 +262,7 @@ class Crawler
         all_links.each do |li|
             # for debug
             # Finished! total:811 error:["pu.php?v=2&name=八节长欢", "pu.php?v=2&name=冉冉云", "pu.php?v=2&name=四犯剪梅花", "pu.php?v=2&name=清平调辞", "pu.php?v=2&name=西河", "pu.php?v=2&name=荔枝香", "pu.php?v=2&name=钗头凤", "pu.php?v=2&name=长相思", "pu.php?v=2&name=鬭百草"]
-            #if li.text == '暗香'
+            #if li.text == '龙山会'
                 @queue << li
             #end
         end
